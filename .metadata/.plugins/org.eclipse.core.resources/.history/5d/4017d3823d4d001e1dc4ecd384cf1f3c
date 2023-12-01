@@ -1,0 +1,17 @@
+package office;
+
+public class EmployeeMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			Employee e =new Employee(1001,"ram",2000.00);
+			e.displayEmp();
+			
+			Employee e1= new Employee();
+			e1.displayEmp();
+		}
+
+
+	}
+
+}

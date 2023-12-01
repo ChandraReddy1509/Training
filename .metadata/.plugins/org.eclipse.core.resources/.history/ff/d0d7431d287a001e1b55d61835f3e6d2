@@ -1,0 +1,23 @@
+package Pro1;
+
+public class numbers {
+
+	public static void main(String[] args) {
+String s="";
+//		for (i=1;i<=5;i++) {
+//			s=s+i;
+//			
+//			System.out.println(s);
+			
+		  for (int i= 1; i <= 5; i++) {
+	            for (int j= 0; j < i; j++) {
+	            	System.out.println(i);
+	            }
+	        System.out.println(s);
+			
+			
+		
+		}
+	}
+
+}

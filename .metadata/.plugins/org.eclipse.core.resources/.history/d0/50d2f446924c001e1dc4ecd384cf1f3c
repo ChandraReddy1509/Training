@@ -1,0 +1,14 @@
+package office;
+
+import java.util.Scanner;
+
+public class Ram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc=new Scanner(System.in);
+int arr[] = new int [6];
+
+	}
+
+}

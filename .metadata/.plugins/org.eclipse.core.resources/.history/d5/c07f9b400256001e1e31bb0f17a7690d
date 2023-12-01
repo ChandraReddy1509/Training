@@ -1,0 +1,15 @@
+package com.stream.api;
+
+public class PowerImpl {
+
+	public static void main(String[] args) {
+		double p=() -> {
+			p=Math.pow(12, 2);
+			
+	
+
+};
+}
+
+	System.out.println(p);
+}

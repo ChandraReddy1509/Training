@@ -1,0 +1,18 @@
+package com.stream.api;
+
+public class format {
+
+	public static void main(String[] args) {
+		FormatString f1=()->{
+			String s="aniket";
+			s.replaceAll(""," ") ;
+			System.out.println(s);
+			return s;
+			
+			
+		};
+	
+	System.out.println(f1.Formater());
+
+}
+}

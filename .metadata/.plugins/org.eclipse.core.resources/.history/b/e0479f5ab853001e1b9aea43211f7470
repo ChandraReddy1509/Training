@@ -1,0 +1,29 @@
+package com.collection;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class CountChars {
+	public static Map<Character ,Integer> countChars(char[] arr){
+		Map<Character,Integer> charMap=new HashMap<>();
+		return charMap;
+	}
+
+	
+	
+
+	public static void main(String[] args) {
+		char[] charArray= {'a','b','c','d' };
+		Map<Character,Integer> res=CountChars(charArray(charArray));
+		char[] charArray= {'a','b','c','d' };
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

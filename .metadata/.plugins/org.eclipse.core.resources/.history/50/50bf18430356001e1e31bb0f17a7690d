@@ -1,0 +1,13 @@
+package com.stream.api;
+import java.lang.Math;
+
+public class PowerImpl {
+
+	public static void main(String[] args) {
+		Power p1= () -> {
+			p1=Math.pow(12, 2);
+		};
+		
+	System.out.println(p1.power);
+}
+}

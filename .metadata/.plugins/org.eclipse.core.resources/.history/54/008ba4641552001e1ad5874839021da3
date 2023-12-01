@@ -1,0 +1,11 @@
+package com.collection;
+
+import java.util.LinkedList;
+
+public class LinkedLst {
+
+	public static void main(String[] args) {
+		LinkedList<String>=new LinkedList<String>();
+	}
+
+}

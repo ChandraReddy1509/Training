@@ -1,0 +1,16 @@
+package com.stream.api;
+import java.lang.Math;
+
+public class PowerImpl {
+
+	public static void main(String[] args) {
+		Power p1= () -> {
+			double res;
+			 res=Math.pow(2.0, 2.0);
+			return res;
+		};
+		
+	
+	System.out.println(p1.power());
+}
+}

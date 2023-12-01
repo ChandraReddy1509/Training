@@ -1,0 +1,19 @@
+package com.collection;
+
+import java.util.HashMap;
+import java.util.List;
+
+public class Excercise6 {
+	public static List<String> getVoter(HashMap<Integer,String> vid);
+	
+	
+
+	public static void main(String[] args) {
+		HashMap<Integer, Integer> vid=new HashMap();
+		vid.put(null, null)
+		
+		
+
+	}
+
+}

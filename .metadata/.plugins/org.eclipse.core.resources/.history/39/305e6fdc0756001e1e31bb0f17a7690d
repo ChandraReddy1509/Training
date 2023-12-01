@@ -1,0 +1,13 @@
+package com.stream.api;
+
+public class format {
+
+	public static void main(String[] args) {
+		String input="cad";
+FormatString formatString = str -> String.join (" ", str.split(""));
+	        
+			
+			
+		}
+	};
+

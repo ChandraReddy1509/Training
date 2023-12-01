@@ -1,0 +1,16 @@
+package office;
+
+public class AccountMain {
+
+	public static void main(String[] args) {
+		Person p1=new Person("naga", 500.0f);
+		Account a1=new Account(1234,5000 , p1);
+		a1.deposit(2000);
+		p1.displayPerson();
+		a1.displayAccount();
+		
+		
+
+	}
+
+}

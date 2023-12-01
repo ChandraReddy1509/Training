@@ -1,0 +1,26 @@
+package com.collection;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Exercise3 {
+	public static Map<Integer, Integer> getSquare(int[]arr){
+		Map<Integer,Integer> m1=new HashMap<>();
+		for(int i=1;i<arr.length;i++) {
+			//int sq=i*i;
+			m1.put(arr[i], i*i);
+		return m1;
+		}
+		return m1;
+	}
+	
+
+	public static void main(String[] args) {
+		int[]arr= {1,2,34,22,44,11,23};
+		List<Integer> squares=getSquare(m1);
+		System.out.println(squares);
+		
+	}
+
+}

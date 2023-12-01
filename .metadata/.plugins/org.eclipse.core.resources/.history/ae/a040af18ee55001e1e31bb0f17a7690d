@@ -1,0 +1,13 @@
+package com.stream.api;
+import com.stream.api.*;
+
+public class MessageImplementor {
+	
+	public static void main(String[] args) {
+		MessageInterface mi=(msg)->System.out.println("msgg:" +msg) ;
+		mi.showMessage("welcome");
+			
+		};
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.stream.api;
+
+public class format {
+
+	public static void main(String[] args) {
+		
+			
+			
+		FormatString<String, String> formatString = str -> String.join(" ", str.split(""));
+	        
+			
+			
+		}
+	};
+
+}

@@ -1,0 +1,24 @@
+package com.sbu.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.sbu.entity.Employee;
+import com.sbu.entity.EmployeeSBU;
+
+public class sbuTest {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context=new ClassPathXmlApplicationContext("beans.xml");
+		
+		EmployeeSBU e1=(EmployeeSBU) context.getBean("employeeSbu");
+		System.out.println(e1);
+		
+		Employee emp1=(Employee)context.getBean(employeeBeans1);
+//		System.out.println(emp1);
+//		Employee emp2=(Employee)context.getBean(employeeBeans2);
+//		System.out.println(emp2);
+	}
+
+}

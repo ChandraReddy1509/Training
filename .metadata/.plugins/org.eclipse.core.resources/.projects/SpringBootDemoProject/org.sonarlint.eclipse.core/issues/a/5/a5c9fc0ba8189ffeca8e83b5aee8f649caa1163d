@@ -1,0 +1,8 @@
+
+a
+java:S1199 "-Extract this nested code block into a method.b f95b70fdc3088560732a5ac135644506h
+|
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"b da96c53f00f8b26f1cc29c20b05f4ee1h
+o	java:S125"<This block of commented-out lines of code should be removed.b 4bbf198e5e4cb82f2a52d936f5073800h
+ƒ
+java:S1128"ORemove this unused import 'org.springframework.web.bind.annotation.GetMapping'.b f7daf51c8d1fae012d7722cdfa37e0f6h

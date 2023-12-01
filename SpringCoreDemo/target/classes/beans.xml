@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean class="com.spring.entity.Library" id="libraryBean" scope="prototype" autowire="byName">
+
+		<property name="regno" value="1234"></property>
+		<property name="lname" value="Central library"></property>
+		<property name="location" value="Grant street"></property>
+		
+		
+
+	</bean>
+	<bean class="com.spring.entity.Book" id="book" scope="prototype" >
+		<property name="bookCode" value="1"></property>
+		<property name="bookName" value="Maths"></property>
+		<property name="author" value="anil"></property>
+		<property name="price" value="1212.0"></property>
+
+
+		<!-- <constructor-arg index="0" value="100"></constructor-arg>
+<constructor-arg index="1" value="Corporation"></constructor-arg>
+<constructor-arg index="2" value="shivajichowk"></constructor-arg>
+-->
+	</bean>
+
+
+</beans>

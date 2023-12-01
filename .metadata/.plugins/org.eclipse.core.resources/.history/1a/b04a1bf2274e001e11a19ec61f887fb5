@@ -1,0 +1,20 @@
+package office;
+
+public class BankAcc {
+	private long account;
+	private double balance;
+	private String accHolder;
+
+	
+	void Account (long account,double balance,String accHolder) {
+		this.balance=balance;
+		this.accHolder=accHolder;
+		this.balance=balance;
+	}
+	
+		
+		
+	}
+	
+
+}

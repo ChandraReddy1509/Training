@@ -1,0 +1,33 @@
+package com.collection;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class CountChars {
+	public static Map<Character ,Integer> countChars(char[] arr){
+		Map<Character,Integer> charMap=new HashMap<>();
+		return charMap;
+	}
+
+	
+	
+
+	public static void main(String[] args) {
+		Map<Character,Integer> res=CountChars(charArray(charArray));
+		char[] charArray= {'a','b','c','d' };
+		List <E> = .asList(charArray);
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

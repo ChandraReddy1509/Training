@@ -1,0 +1,6 @@
+package com.stream.api;
+
+public interface MessageInterface {
+	void showMessage(String message,String message2);
+
+}

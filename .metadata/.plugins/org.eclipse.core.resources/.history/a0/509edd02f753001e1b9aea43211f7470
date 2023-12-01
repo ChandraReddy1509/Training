@@ -1,0 +1,48 @@
+package com.collection;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class CountChars {
+	public static Map<Character ,Integer> countChars(char[]arr){
+		
+		Map<Character,Integer> charMap=new HashMap<>();
+		for(int a=0;a<arr.length;a++);
+		int count=1;
+		if(charMap.containsKey(arr[a])) {
+			charMap.remove(arr[a]);
+			count++;
+			charMap.put(arr[a], count);
+		}
+			else {
+				charMap.put(arr[a],count);	
+			}
+		return charMap;
+	}
+
+
+	
+	
+
+	public static void main(String[] args) {
+		//Map<Character,Integer> res=countChar(charMap());
+		char[] charArray= {'a','b','c','d','d' };
+		//char[] arr = null;
+		System.out.println(countChars(charArray));
+		}
+		
+
+		
+		
+	}
+
+
+
+
+
+	private static char[] countChars(char[] charArray) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

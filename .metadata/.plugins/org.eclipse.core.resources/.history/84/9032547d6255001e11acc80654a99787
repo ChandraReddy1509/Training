@@ -1,0 +1,17 @@
+ package excercise1;
+
+public class Mirror {
+	String s="EARTH";
+	StringBuffer s1 =new StringBuffer(s);
+	
+	//System.out.println("the mirror image :"+ s + "|" + s1.reverse());
+	
+	
+	public static void main(String[] args) {
+		//String s="EARTH";
+		//StringBuffer s1 =new StringBuffer(s);
+		
+		System.out.println("the mirror image :"+ s + "|" + s1.reverse());
+	}
+}
+

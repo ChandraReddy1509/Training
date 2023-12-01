@@ -1,0 +1,19 @@
+package com.collection;
+
+import java.util.LinkedList;
+
+public class LinkedLst {
+
+	public static void main(String[] args) {
+		LinkedList<String> la=new LinkedList<String>();
+		la.add("java");
+		la.add("is");
+		la.add("good");
+		System.out.println(la);
+		
+		System.out.println(la.remove("java"));
+		
+	}
+
+	}
+

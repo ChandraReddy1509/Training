@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean class="com.sbu.entity.Employee" id="employeeBeans1" scope="prototype" >
+         <property name="employeeId" value="1234"></property>
+		<property name="employeeName" value="agnee"></property>
+		<property name="salary" value="2000.0"></property>
+		<!-- <property name="" ref="productBeans"></property>-->
+		</bean>
+		
+		<bean class="com.sbu.entity.Employee" id="employeeBeans2" scope="prototype" >
+        <property name="employeeId" value="12345"></property>
+		<property name="employeeName" value="agnee2"></property>
+		<property name="salary" value="2001.0"></property>
+		<!-- <property name="" ref="productBeans"></property>-->
+		</bean>
+
+
+	
+	<bean class="com.sbu.entity.EmployeeSBU" id="employeeSbu">
+         <property name="sbuCode" value="134"></property>
+		<property name="sbuName" value="tea"></property>
+		<property name="sbuHead" value="agnee23"></property>
+		<property name="empList">
+	<list>
+			<ref bean="employeeBeans1"/>	
+			<ref bean="employeeBeans2"/>		
+
+   </list>	
+		
+	</property>
+		
+		
+		
+		
+		
+	</bean>
+	</beans>
+		

@@ -1,0 +1,31 @@
+package com.main.java;
+
+import javax.persistence.*;
+
+
+import com.JPA.entity.Book;
+
+public class JPAmain {
+
+	public static void main(String[] args) {
+		EntityManager em = Persistence.createEntityManagerFactory("reddy").createEntityManager();
+		System.out.println("connct");
+
+		System.out.println("session start");
+		
+		em.getTransaction().begin();
+		
+		Book book = new Book();
+		
+		book.setTitle("core java");
+		book.setAuthor("raju");
+		book.setPrice(2323);
+		
+		em.persist(book);
+		em.getTransaction().commit();	
+		
+		em.close();
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.stream.api;
+
+public class format {
+
+	public static void main(String[] args) {
+		FormatString f1=()->{
+			String s="CG";
+			
+			//s=s.split(s);
+			System.out.println(s.replaceAll("", " ").trim());
+			return s;
+		};
+	
+	System.out.println(f1.Formater());
+
+}
+}

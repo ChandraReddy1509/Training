@@ -1,0 +1,22 @@
+package com.collection;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Exercise3 {
+	public static Map<Integer, Integer> getSquare(int[]num){
+		Map<Integer,Integer> m1=new HashMap<>();
+		for(int number:num) {
+			int sq=number*number;
+			m1.put(number, sq);
+		}
+		return m1;
+	}
+	public static void main(String[] args) {
+		int[]numbers= {1,2,34,22,44,11,23};
+		//List<Integer> squares=getSquare(numbers);
+		System.out.println(getSquare(numbers));
+		
+	}
+
+}

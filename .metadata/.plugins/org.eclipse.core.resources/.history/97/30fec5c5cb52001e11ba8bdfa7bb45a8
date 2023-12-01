@@ -1,0 +1,26 @@
+package com.collection;
+
+import java.util.ArrayList;
+
+public class TestUserDefinedCollection {
+
+	public static void main(String[] args) {
+		ArrayList<ProductCol> plist=new ArrayList<>();
+		
+		ProductCol p1=new ProductCol(100,"pen",100,50.0) ;
+		plist.add(p1);
+	}
+	
+	public static void displayProducts(ArrayList<ProductCol> plist) {
+		System.out.println("product data :") ;
+		for (ProductCol p:plist) {
+			System.out.println(p1);
+		}
+	
+	
+	
+
+
+
+}
+}

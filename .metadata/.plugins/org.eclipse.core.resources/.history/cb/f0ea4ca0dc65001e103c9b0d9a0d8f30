@@ -1,0 +1,151 @@
+package ExceptionDemo1;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+class Candidate {
+    private String name;
+    private int id;
+    private int age;
+    private String gender;
+    private String department;
+    private int yearOfJoining;
+    private double salary;
+
+    public Candidate(int id, String name, int age, String gender, String department, int yearOfJoining, double salary) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.department = department;
+        this.yearOfJoining = yearOfJoining;
+        this.salary = salary;
+    }
+
+    // Getter and Setter methods
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public int getYearOfJoining() {
+        return yearOfJoining;
+    }
+
+    public void setYearOfJoining(int yearOfJoining) {
+        this.yearOfJoining = yearOfJoining;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Candidate{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                ", department='" + department + '\'' +
+                ", yearOfJoining=" + yearOfJoining +
+                ", salary=" + salary +
+                '}';
+    }
+}
+
+public class Implementation {
+    public static Map<String, Long> getCount(List<Candidate> list) {
+        long maleCount = list.stream()
+                .filter(candidate -> "Male".equalsIgnoreCase(candidate.getGender()))
+                .count();
+        long femaleCount = list.stream()
+                .filter(candidate -> "Female".equalsIgnoreCase(candidate.getGender()))
+                .count();
+
+        Map<String, Long> genderCount = new HashMap<>();
+        genderCount.put("Male", maleCount);
+        genderCount.put("Female", femaleCount);
+
+        return genderCount;
+    }
+
+    public static Map<String, Double> getAverageAge(List<Candidate> list) {
+        Map<String, Double> averageAgeByGender = list.stream()
+                .collect(Collectors.groupingBy(Candidate::getGender,
+                        Collectors.averagingInt(Candidate::getAge)));
+
+        return averageAgeByGender;
+    }
+
+    public static Map<String, Long> countCandidatesDepartmentWise(List<Candidate> list) {
+        Map<String, Long> departmentCount = list.stream()
+                .collect(Collectors.groupingBy(Candidate::getDepartment,
+                        Collectors.counting()));
+
+        return departmentCount;
+    }
+
+    public static Optional<Candidate> getYoungestCandidateDetails(List<Candidate> list) {
+        Optional<Candidate> youngestMaleInProductDevelopment = list.stream()
+                .filter(candidate -> "Male".equalsIgnoreCase(candidate.getGender())
+                        && "Product Development".equalsIgnoreCase(candidate.getDepartment()))
+                .min(Comparator.comparingInt(Candidate::getAge));
+
+        return youngestMaleInProductDevelopment;
+    }
+
+    public static void main(String[] args) {
+        // Sample usage
+        List<Candidate> candidates = new ArrayList<>();
+        candidates.add(new Candidate(1, "John", 30, "Male", "Product Development", 2010, 80000.0));
+        candidates.add(new Candidate(2, "Alice", 28, "Female", "Product Development", 2012, 75000.0));
+        candidates.add(new Candidate(3, "Bob", 25, "Male", "Marketing", 2015, 70000.0));
+        candidates.add(new Candidate(4, "Eve", 26, "Female", "Marketing", 2014, 72000.0));
+
+        // Testing the methods
+        System.out.println("Count by Gender: " + getCount(candidates));
+        System.out.println("Average Age by Gender: " + getAverageAge(candidates));
+        System.out.println("Count by Department: " + countCandidatesDepartmentWise(candidates));
+        System.out.println("Youngest Male in Product Development: " + getYoungestCandidateDetails(candidates));
+    }
+}
